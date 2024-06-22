@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color:#ed0909;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/final1.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 100px;
+    size: 100px;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style:none ;
+    margin: 25px ;
+   
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span {
+    color: blue;
+}
+
+/* ---------------about---------------- */
+#about{
+    padding: 80px;
+    color :white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 35px;
+    font-weight: 600;
+    color: aqua;
+}
+.about-col-2 p{
+    color: #fff;
+    font-size: large;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 70%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:red;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* -------------------services----------------- */
+body, h1, h2, p {
+    margin: 10;
+    padding: 0;
+  }
+  
+  #service {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 50vh; /* Set the height to fill the viewport */
+  }
+  
+  .container {
+    text-align: left; /* Center align the content within the container */
+  
+   
+  }
+  
+  .service-list {
+    display: flex; /* Use flexbox to arrange the service items horizontally */
+    gap: 30px; /* Add some spacing between the service items */
+  }
+  
+  .service-list > div {
+    /* border: 1px solid #ccc; Add borders for better visual separation */
+    padding: 20px;
+    max-width: 400px; /* Set a maximum width for each service item */
+  }
+  
+  .service-list a {
+    display: block; /* Make the "learn more" link a block-level element */
+    margin-top: 10px; /* Add some spacing between the description and the link */
+  }
+.service-list div{
+    background:rgb(19, 53, 64);
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.service-list div i{
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+.service-list div h2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+.service-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.service-list div p1{
+    font-size: 16px;
+}
+.service-list div:hover{
+    background: #f2eff0;
+    transform: translateY(-10px);
+}
+
+/* -------------------portfolio------------------- */
+
+body, h1,  p {
+    margin: 10;
+    padding: 0;
+  }
+#portfolio{
+    padding: 60px 0;
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: flex-start; /* Horizontally center the content */
+    align-items: flex-start; /* Vertically center the content */
+    height: 10vh; /* Set the height to fill the viewport */
+  }
+  
+  .container {
+    text-align: left; /* Center align the content within the container */
+  }
+  .worklist{
+    display: flex; /* Use flexbox to arrange the service items horizontally */
+    gap: 30px; /* Add some spacing between the service items */
+  }
+  
+  .work img {
+    /* border: 1px solid #ccc; Add borders for better visual separation */
+    padding: 20px;
+    max-width: 400px; /* Set a maximum width for each service item */
+    transition: transform 0.5s;
+  }
+
+  .text-overlay{
+    width: 25%;
+    height: 40%;
+    background: linear-gradient(rgba(0,0,0,0.6) #ff004f) ;
+    border-radius: 10px;
+    position: absolute;
+    left: 1;
+    bottom: 10;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: automatically;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: hight 0.5s;
+    transition: width 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color: #fbf9f9;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover layer{
+    height: 100%;
+    width: 100%;
+}
+.btn{
+    display: block;
+    margin: 100px auto;
+    width: fit-content;
+    border: 1px solid #faf7f8;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #fffefe;
+}
+/* --------------------------contact-------------------------- */
+.contact{
+    padding: 100px 0;
+}
+.contact-left{
+   margin-bottom: 30px;
+   flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color:#ff004f ;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
