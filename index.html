@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26cc84d515.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!------------------ Header Section -------------------->
+    <section id="Home"></section>
+    <nav class="navbar">
+        <button id="toggle-theme">🌞 Day Mode</button>
+        <!-- <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button> -->
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+       
+    </nav>
+       <div id="home" class="container">
+        <div class="text-content">
+            <h1>Hey I'm <span >Amit Singh </span></h1>
+            <div class="typewriter-js">
+                <span id="typewriter"></span>
+            </div>
+            
+            <p>
+                Hi! I'm a passionate software engineer who loves exploring the world, 
+                sharing my travel and food adventures, and capturing the beauty of life through photography.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="images/WhatsApp Image 2024-06-11 at 18.00.55_be679190.jpg" alt="Profile Picture">
+        </div>
+    </div>
+    <!------------------- About Section ------------------------>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Amitpic.jpg" alt="About Me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I have always been captivated by Web Developer 
+                        since a young age. It began as a hobby, but over the years,
+                         it has transformed into a driving force behind my personal 
+                         and professional growth. As a curious and enthusiastic 
+                         individual, I embrace challenges and view them as opportunities 
+                         for learning and improvement.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI / UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+
+
+                        <div class="MySkills">
+                            <h1>My Skills</h1>
+
+                            
+                            <div class="skill">
+                                <div class="skill-name">
+                                    <span>Java</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <div class="skill-name">
+                                    <span>HTML / CSS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <div class="skill-name">
+                                    <span>JavaScript</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <div class="skill-name">
+                                    <span>MERN Stack</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <div class="skill-name">
+                                    <span>Data Structures & Algorithms</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <div class="skill-name">
+                                    <span>DBMS</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="tab-contents" id="Certification">
+                        <ul>
+                            <li><span>2024-2025</span><br>Full stack Development From Internshala <a href="images/Full Stack Development_ Let's begin Training - Certificate of Completion (1).pdf" target="_blank"><i class="fa-solid fa-square-arrow-up-right" style="color: #f50000;"></i></a></li>
+                            <li><span>2023-2024</span><br>Internship at OASIS INFOBYTE <a href="images/Amit Kumar Certificate_pages-to-jpg-0001.jpg" target="_blank"><i class="fa-solid fa-square-arrow-up-right" style="color: #f50000;"></i> </a></li>
+                            <li><span>2022-2023</span><br>Coursera Certification <a href="images/Introduction to Web Development with HTML, CSS,.pdf" target="_blank"><i class="fa-solid fa-square-arrow-up-right" style="color: #f50000;"></i> </a> </li>
+                            <li><span>2021-2022</span><br>Internship at Incapp <a href="images/Java core.jpg" target="_blank"><i class="fa-solid fa-square-arrow-up-right" style="color: #f50000;"></i> </a> </li>
+                            <li><span>2022-2023</span><br>Coursera Certification <a href="images/Object Oriented Programming in Java.pdf" target="_blank"><i class="fa-solid fa-square-arrow-up-right" style="color: #f50000;"></i> </a> </li>
+                            <li><span>2021-2022</span><br>Coursera Certification <a href="images/React Js Ctf.pdf" target="_blank"><i class="fa-solid fa-square-arrow-up-right" style="color: #f50000;"></i> </a> </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>BTech (CSE), AKTU</li>
+                            <li><span>2021</span><br>Diploma, UPBTU</li>
+                            <li><span>2018</span><br>Matriculation, CBSE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------- Services Section ----------------------------->
+    <section id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating visually engaging and user-friendly websites using modern design principles.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designing exceptional user experiences for websites, apps, and digital platforms.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Creating interactive and visually appealing designs for mobile applications.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------- portfolio Section -------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Work 1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A platform to connect talented individuals
+                             worldwide. Available on the Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Music.webp" alt="Work 2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>An app to discover and enjoy 
+                            music from around the globe.
+                             Available on the Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/shoping.jpeg" alt="Work 3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Shop conveniently online with our user-friendly 
+                            app. Available on the Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Food Booking.jpeg" alt="Work 1">
+                    <div class="layer">
+                        <h3>Food Booking App</h3>
+                        <p>Discover Delicious, Made Easy.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Hotel.avif" alt="Work 2">
+                    <div class="layer">
+                        <h3>Hotel Booking App</h3>
+                        <p>Unlock Luxury: Seamless Hotel Booking at Your Fingertips.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Game.jpeg" alt="Work 3">
+                    <div class="layer">
+                        <h3>Gaming App</h3>
+                        <p>Appeals to players who want to embody powerful characters.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------------------------------------ Contact Section ---------------------------->
+    <div id="contact">
+        <div class="Ccontainer">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelopes-bulk fa-beat" style="color: #ef660b;"></i> atsh031999@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume fa-bounce" style="color: #f50000;"></i> +916299593337</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Atsh1999" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://twitter.com/AmitSingh0319?t=U7_bkBjbNPrmtbzpYlETPA&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/__amitsinghchauhan__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/amitsingh0319/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/18LY3gnX71FtP7y-wVDOvn7Gw4paWaapv/view?usp=sharing" target="_blank" download="My_CV" class="custom-button">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Atsh Thakur. Made by me<i class="fa-sharp fa-solid fa-heart"></i> 2025</p>
+        </div>
+    </div>
+    
+
+    <script>
+        const tablinks = document.querySelectorAll(".tab-links");
+        const tabcontents = document.querySelectorAll(".tab-contents");
+
+        function opentab(tabname) {
+            tablinks.forEach(link => link.classList.remove("active-link"));
+            tabcontents.forEach(content => content.classList.remove("active-tab"));
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
