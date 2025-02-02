@@ -619,6 +619,21 @@ body.dark-mode {
         padding: 11px 5px;
         font-size: 9px;
     }
+    .text-content h1{
+        font-size: 1.5rem;
+    }
+    
+    .text-content p{
+        font-size: 12px;
+    } 
+
+    body{
+        font-size: 12px;
+    }
+
+    #service .service-list div {
+        font-size: 12px;
+    }
 
 /* } */
 
